@@ -1,0 +1,280 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #000000;
+}
+
+a {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.5em;
+  font-weight: 600;
+  text-align: left;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+  text-align: center;
+}
+
+hlabel1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+hlabel {
+  color: rgba(25, 111, 153, 0.9);
+  text-align: center;
+}
+
+h2 {
+  color: #fffff;
+  opacity: 0.9;
+  font-size: 2.25em;
+  text-align: center;
+  margin: 12px;
+}
+
+h2label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25em;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 0.95em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h6 {
+  color: #000;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+h4 {
+  color: #007ad1;
+  text-align: center;
+}
+h5 {
+  color: #007ad1;
+  text-align: center;
+  font-size: 1em;
+}
+
+ul {
+  padding-inline-start: 0px;
+  padding: 0px 20px 30px 20px;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+html,
+body,
+#map {
+  height: 100%;
+  margin: 0px;
+  color: #fff;
+}
+
+#features {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(100, 100, 100, 0.5);
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  border-radius: 0px;
+}
+
+#icon-left {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #444444;
+  padding: 10px 10px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+#icon-left img {
+  max-width: 10%;
+}
+
+
+.container-base {
+  position: fixed;
+  display: flex;
+  right: 0;
+  visibility: hidden;
+  max-height: 40%;
+  width: 50%;
+  background: rgba(100, 100, 100, 0.8);
+  bottom: 0px;
+}
+
+.container {
+  right: 0;
+  width: 100%;
+  padding-bottom: 25px;
+  overflow-x: auto;
+
+}
+
+.container .closebtn {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  font-weight: 300;
+  text-decoration: none;
+  right: 5px;
+  padding-right: 5px;
+  float: right;
+  font-size: 25px;
+}
+
+.popup-content-mobile {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  overflow-x: auto;
+}
+
+.filter-group {
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  bottom: 35px;
+  left: 10px;
+  z-index: 5;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-group input[type="checkbox"]:first-child + label {
+  border-radius: 3px 3px 0 0;
+}
+
+.filter-group label:last-child {
+  border-radius: 0 0 3px 3px;
+  border: none;
+}
+
+.filter-group input[type="checkbox"] {
+  display: none;
+}
+
+.filter-group input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+  padding: 8px 10px 8px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filter-group input[type="checkbox"] + label {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.filter-group input[type="checkbox"] + label:hover,
+.filter-group input[type="checkbox"]:checked + label {
+  opacity: 100%;
+}
+
+.filter-group input[type="checkbox"]:checked + label:before {
+  content: "✔";
+  opacity: 100%;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+.mapboxgl-ctrl-group {
+  border-radius: 5px;
+  background: #ccc;
+  
+}
+.mapboxgl-ctrl-top-right{
+  top: 50px;  
+}
+
+@media only screen and (max-width: 850px) {
+  .container-base {
+    max-height: 30%;
+    width: 100%;
+    bottom: 0;
+  }
+  .container {
+    padding-bottom: 35px;
+  }
+  #icon-left img {
+    max-width: 35%;
+  }
+  .filter-group {
+    font-weight: 400;
+    top: 10%;
+  }
+  .filter-group label {
+    font-size: 10px;
+  }
+  .popup-content-mobile {
+    font: 14px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  .openbtn {
+    font-size: 12px;
+  }
+  .mapboxgl-ctrl-group {
+    visibility: hidden;
+  }
+}
