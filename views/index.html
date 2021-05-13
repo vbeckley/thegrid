@@ -65,12 +65,12 @@
               alt="EUNIC"
           /></a>
         </div>
-        <button
-          class="openbtn"
-          onclick="location.href='https://forms.gle/VeGziaQzARpcjb896'"
+        
+        <a
+          class="openbtn" href="https://forms.gle/VeGziaQzARpcjb896" target="_blank"
         >
           Add Yourself to the Grid
-        </button>
+        </a>
       </div>
       <div id="container-base" class="container-base">
         <div id="container" class="container">
@@ -111,7 +111,7 @@
         container: "map",
         style: "mapbox://styles/mapbox/dark-v9",
         center: [-122.440389, 37.763519],
-        zoom: 9
+        zoom: 12
       });
 
       //The popup//
@@ -222,7 +222,7 @@
               var symbol = feature.properties["category_grouped"];
               var layerID = symbol;
 
-              console.log("list: ", stakeholders.features);
+                   console.log("list: ",stakeholders.features);
 
               if (!map.getLayer(layerID)) {
                 map.addLayer({
